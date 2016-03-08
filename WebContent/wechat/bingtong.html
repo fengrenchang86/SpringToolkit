@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>冰桶挑战赛</title>
+    <meta name="author" content="jalon">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <link type="text/css" rel="stylesheet" href="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/style_fde749e.css">
+    <script type="text/javascript" charset="utf-8" src="eg_18da550.js"></script>
+    <script src="iwan-h5game-sdk.js"></script>
+    <script>
+        ih5game.setAppId('84');
+        ih5game.setToken('admin');
+        ih5game.ad.banner();
+    </script>
+</head>
+<body>
+
+<div class="box" id="touch-box">
+    <div class="ice-box">
+        <div id="score-box">
+            <span id="his-score">
+            <p>要挑战的分数</p>
+            <p id="his-score-n" style="font-size: 24px; margin-top: 10px">0</p>
+            </span>
+            <span id="my-score">
+                <p>我的得分</p>
+                <p id="my-score-n" style="font-size: 24px; margin-top: 10px">99.19</p>
+            </span>
+        </div>
+        <div id="bucket">
+            <div id="bucket-box">
+                <img src="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/img/bucket_efb12b8.png" id="bucket-dom" width="60" alt="bucket"/>
+                <img src="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/img/bucket0_dd6dce7.png" id="bucket-dom1" width="60" class="hide" alt="bucket"/>
+            </div>
+
+            <img src="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/img/pb_39da6a9.png" alt="pb" id="water" class="hide"/>
+        </div>
+    </div>
+
+    <!--<span id="centerPoint"></span>-->
+   <div id="boy"></div>
+
+</div>
+
+<div id="mask" style="position: absolute; background: #fff; opacity: 0.7; width: 100%; height: 100%;display: none;"></div>
+<div style="position: absolute; width: 100%; height: 100%;display: none; " id="tip-box-op">
+    <img src="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/img/share_31d501c.png" alt="share" id="share-img" width="80" style="position: absolute; right: 0; top: 0"/>
+    <!--tip-->
+    <div id="tip-box">
+        <h3 class="tip-title">冰桶挑战赛XX</h3>
+        <p class="tip-content"></p>
+        <span id="share-score">333333</span>
+    </div>
+    <div id="touch-again" style="width: 100%; height: 200px; position: absolute; top: 300px;"></div>
+</div>
+<div id="contro" style=" position: absolute; bottom: 10px;width: 100%;height: 40px; display: none">
+    <span id="again" style="text-align: center; display: inline-block; width: 25%; margin-left: 5%; height: 40px; line-height: 40px; background: indianred; color: #fff;">再玩一次</span>
+    <a style="text-align: center; display: inline; display: inline-block; margin-right: 5%; width: 25%;height: 40px; line-height: 40px; float: right; background: indianred;position: relative; z-index: 111; color: #fff" href="http://5g.baidu.com/">更多游戏</a>
+    <img src="http://iwan.baidu.com/xxx_xiaoyouxi/xyz_abc/games/icebucket/img/sbd_eabb25a.png" alt="share" id="share-img-bd" width="80" style="position: absolute; top: -35px; right: 30%"/>
+</div>
+<div id="" style=""></div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="app_86f6d8e.js"></script>
+</html>
