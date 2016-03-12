@@ -69,7 +69,7 @@ public class DownloadServlet extends HttpServlet {
 	}
 	
 	protected long getExpiresMills() {
-		Date date = DateUtils.addMinutes(new Date(), 20);
+		Date date = DateUtils.addMinutes(new Date(), 30);
 		long t = date.getTime();
 		return t;
 	}
