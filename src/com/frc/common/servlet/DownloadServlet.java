@@ -45,7 +45,7 @@ public class DownloadServlet extends HttpServlet {
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		String path = request.getPathInfo();
 		path = path.substring(1);
-		System.out.println("Path:" + path);
+//		System.out.println("Path:" + path);
 		
 		URL url = loader.getResource(path);
 		InputStream is = url.openStream();
