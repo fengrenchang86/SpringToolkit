@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>ST Demo</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+		var dojoConfig = {
+			parseOnLoad:true,
+			isDebug:false,
+			locale:"zh",
+			packages: [
+						{name:"stdemo", location:"/dl/stdemo"}
+						]
+		};
+	</script>
+	<script src="/dl/dojo/dojo/dojo.js" djConfig="parseOnLoad: true, isDebug: false"></script>
+	<link rel="stylesheet" href="/dl/dojo/dijit/themes/claro/claro.css"></link>
+	<link rel="stylesheet" href="/dl/dojo/dojo/resources/dojo.css"></link>
+	<link rel="stylesheet" href="/dl/dojo/dojox/grid/resources/claroGrid.css"></link>
+	<link rel="stylesheet" href="demo.css"></link>
+	
+		<script type="text/javascript">
+			require(["stdemo/stdemo",
+			         "dojo/ready"], 
+					function(STdemo, ready){
+				ready(function(){
+					var input = new STdemo();
+					input.placeAt(dojo.byId("inputDemo"));
+					dojo.parser.parse("inputDemo");
+					console.log("done");
+				});
+			});
+		</script>
+	</head>
+	<body class="claro">
+		<div class="maindiv">
+			<div class="title">ST Demo</div>
+			<div id="inputDemo"></div>
+		
+		
+		<div style="height:200px;"></div>
+		<form method="post" action="/wf/demo/download2" id="dlform">
+			<input name="fileName" value="ttt" type="hidden" />
+		</form>
+		<a href="javascript:document.getElementById('dlform').submit();" >go</a>
+	</body>
+</html>

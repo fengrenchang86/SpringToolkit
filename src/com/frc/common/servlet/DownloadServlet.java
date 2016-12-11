@@ -2,6 +2,7 @@ package com.frc.common.servlet;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Writer;
@@ -46,6 +47,11 @@ public class DownloadServlet extends HttpServlet {
 		String path = request.getPathInfo();
 		path = path.substring(1);
 //		System.out.println("Path:" + path);
+		
+		File file = new File(path);
+		if (file.exists()) {
+			System.out.println(file.getAbsolutePath());
+		}
 		
 		URL url = loader.getResource(path);
 		InputStream is = url.openStream();
