@@ -20,13 +20,14 @@
 	-->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:teacherHelperAppContext.xml</param-value>
+		<param-value>classpath:applicationContext.xml</param-value>
 	</context-param>
+
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>com.frc.teacherhelper.service.InitServer</listener-class>
+		<listener-class>com.frc.common.listener.InitServer</listener-class>
 	</listener>
 	<servlet>
 		<servlet-name>WFSpring</servlet-name>
