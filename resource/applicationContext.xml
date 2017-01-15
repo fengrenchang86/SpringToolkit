@@ -13,7 +13,6 @@
 	default-lazy-init="false">
 	
 	<import resource="guessNumberAppContext.xml"></import>
-	<!-- 
 	<import resource="teacherHelperAppContext.xml"></import>
-	 -->	
+		
 </beans>
