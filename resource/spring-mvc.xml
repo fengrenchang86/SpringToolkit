@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="        http://www.springframework.org/schema/beans
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!-- 使用annotation 自动注册bean -->
-	
-	<!-- 
-	
-	<context:component-scan base-package="com.frc.teacherhelper.entity" />
-	<context:component-scan base-package="com.frc.teacherhelper.controller" />
-	<context:component-scan base-package="com.frc.teacherhelper.dao" />
-	<context:component-scan base-package="com.frc.teacherhelper.service" />
-	<context:component-scan base-package="com.frc.games.guessnumber.service" />
-	<context:component-scan base-package="com.frc.games.guessnumber.service.impl" />
-		 -->	 
-	<import resource="guessNumberAppContext.xml"></import>
-	<import resource="teacherHelperAppContext.xml"></import>
-	<mvc:annotation-driven />
+	<!-- 使用annotation 自动注册bean -->
 
+	<!-- <context:component-scan base-package="com.frc.teacherhelper.entity" 
+		/> <context:component-scan base-package="com.frc.teacherhelper.controller" 
+		/> <context:component-scan base-package="com.frc.teacherhelper.dao" /> <context:component-scan 
+		base-package="com.frc.teacherhelper.service" /> <context:component-scan base-package="com.frc.games.guessnumber.service" 
+		/> <context:component-scan base-package="com.frc.games.guessnumber.service.impl" 
+		/> -->
+	 
+	<!--  
+	<import resource="classpath:teacherHelperAppContext.xml"></import>
+	<import resource="classpath:guessNumberAppContext.xml"></import>
+	-->
+	<import resource="classpath*:*AppContext.xml"></import>
+	 
+	<mvc:annotation-driven /> 
+	<!-- 配置自动扫描的包 -->
+	<!-- 
+	<context:component-scan base-package="com.frc.appleframework"></context:component-scan>
+	 -->
 	<!-- ... -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
@@ -35,5 +42,5 @@
 			<value>4096</value>
 		</property>
 	</bean>
-	
+
 </beans>
