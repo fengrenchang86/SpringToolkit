@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:mvc="http://www.springframework.org/schema/mvc" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p" 
-	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/mvc
@@ -19,18 +17,21 @@
 		base-package="com.frc.teacherhelper.service" /> <context:component-scan base-package="com.frc.games.guessnumber.service" 
 		/> <context:component-scan base-package="com.frc.games.guessnumber.service.impl" 
 		/> -->
-	 
-	<!--  
-	<import resource="classpath:teacherHelperAppContext.xml"></import>
-	<import resource="classpath:guessNumberAppContext.xml"></import>
-	-->
+
+	<!-- <import resource="classpath:teacherHelperAppContext.xml"></import> 
+		<import resource="classpath:guessNumberAppContext.xml"></import> -->
 	<import resource="classpath*:*AppContext.xml"></import>
-	 
-	<mvc:annotation-driven /> 
+
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	
 	<!-- 配置自动扫描的包 -->
-	<!-- 
-	<context:component-scan base-package="com.frc.appleframework"></context:component-scan>
-	 -->
+	<!-- <context:component-scan base-package="com.frc.appleframework"></context:component-scan> -->
 	<!-- ... -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
