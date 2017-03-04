@@ -1,3 +1,8 @@
 cssStudy
 /WebContent/
 /target/
+/.settings
+/build
+.classpath
+.gitignore
+.project

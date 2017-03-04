@@ -12,16 +12,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="webapp"/>
-	<classpathentry kind="lib" path="/TeacherHelper/resource">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/TeacherHelper/webapp">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
@@ -51,6 +41,26 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/GameFramework/webapp">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/AppleFramework/resource">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/AppleFramework/test">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/AlphaFrontend/resource">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/AlphaFrontend/webapp">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/"/>
 		</attributes>

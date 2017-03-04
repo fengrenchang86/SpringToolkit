@@ -3,8 +3,10 @@
 	<name>SpringToolkit</name>
 	<comment></comment>
 	<projects>
-		<project>TeacherHelper</project>
 		<project>GameFramework</project>
+		<project>AppleFramework</project>
+		<project>AlphaFrontend</project>
+		<project>ChooseAnOption</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

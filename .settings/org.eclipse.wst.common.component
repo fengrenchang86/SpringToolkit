@@ -3,12 +3,17 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/" source-path="/resource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resource"/>
         <wb-resource deploy-path="/" source-path="/webapp"/>
-        <dependent-module archiveName="TeacherHelper.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/TeacherHelper/TeacherHelper">
+        <dependent-module archiveName="GameFramework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GameFramework/GameFramework">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="GameFramework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/GameFramework/GameFramework">
+        <dependent-module archiveName="AppleFramework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AppleFramework/AppleFramework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AlphaFrontend.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/AlphaFrontend/AlphaFrontend">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ChooseAnOption.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ChooseAnOption/ChooseAnOption">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/SpringToolkit/build/classes"/>
